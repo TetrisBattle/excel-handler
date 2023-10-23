@@ -1,0 +1,29 @@
+{
+	"extends": ["eslint:recommended", "plugin:prettier/recommended"],
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2021
+	},
+	"rules": {
+		"no-unused-vars": "warn",
+		"no-empty-function": "warn",
+		"no-unreachable":"warn",
+		"no-empty":"warn",
+		"prettier/prettier": [
+			"warn",
+			{
+				"printWidth": 80,
+				"tabWidth": 4,
+				"useTabs": true,
+				"semi": false,
+				"singleQuote": true,
+				"jsxSingleQuote": true,
+				"trailingComma": "es5",
+				"endOfLine": "auto"
+			}
+		]
+	}
+}
